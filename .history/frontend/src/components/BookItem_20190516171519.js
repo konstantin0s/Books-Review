@@ -38,12 +38,10 @@ isLoaded: true
     if (isLoaded) {
       return ( 
         <div>
-          <h2 style={{marginBottom: '0'}}>
+          <h2>
           {title.rendered}
-    <small>Review By <strong>{ author } </strong></small>
-    <img src={imgUrl} alt={title.rendered} style={{width: '100%'}} />
+    <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
           </h2>
-          <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
         </div>
          );
     }

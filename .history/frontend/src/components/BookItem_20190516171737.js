@@ -41,7 +41,7 @@ isLoaded: true
           <h2 style={{marginBottom: '0'}}>
           {title.rendered}
     <small>Review By <strong>{ author } </strong></small>
-    <img src={imgUrl} alt={title.rendered} style={{width: '100%'}} />
+    <img src="{imgUrl}" alt={title.rendered} style={{width: '100%'}} />
           </h2>
           <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
         </div>

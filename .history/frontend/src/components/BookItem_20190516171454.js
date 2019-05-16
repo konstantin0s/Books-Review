@@ -34,21 +34,14 @@ isLoaded: true
   render() { 
     const { title, excerpt } = this.props.book;
     const { author, imgUrl, isLoaded} = this.state;
-    
-    if (isLoaded) {
-      return ( 
-        <div>
-          <h2 style={{marginBottom: '0'}}>
-          {title.rendered}
-    <small>Review By <strong>{ author } </strong></small>
-    <img src={imgUrl} alt={title.rendered} style={{width: '100%'}} />
-          </h2>
-          <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
-        </div>
-         );
-    }
-    return null;
-
+    return ( 
+    <div>
+      <h2>
+      {title.rendered}
+<div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
+      </h2>
+    </div>
+     );
   }
 }
  
