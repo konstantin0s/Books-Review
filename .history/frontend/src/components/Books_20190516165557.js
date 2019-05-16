@@ -17,7 +17,6 @@ class Books extends Component {
   }
 
   render() { 
-    console.log(this.state);
     return (
       <h1>Books</h1>
      );

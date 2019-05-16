@@ -12,12 +12,11 @@ class Books extends Component {
 
   componentDidMount() {
     axios.get('/wp-json/wp/v2/books')
-    .then(res => this.setState({ books: res.data, isLoaded: true}))
+    .then(res => this.setState({ books: res.data}))
     .catch(err => console.log(err));
   }
 
   render() { 
-    console.log(this.state);
     return (
       <h1>Books</h1>
      );
