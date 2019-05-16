@@ -33,7 +33,7 @@ isLoaded: true
   }
 
   render() { 
-    const { id, title, excerpt } = this.props.book;
+    const { title, excerpt } = this.props.book;
     const { author, imgUrl, isLoaded} = this.state;
     
     if (isLoaded) {
@@ -46,7 +46,6 @@ isLoaded: true
           </h2>
           <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
           <Link to={`/book/${id}`}>Read Review</Link>
-          <hr />
         </div>
          );
     }

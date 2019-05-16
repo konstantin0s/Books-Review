@@ -46,7 +46,6 @@ isLoaded: true
           </h2>
           <div dangerouslySetInnerHTML={{__html: excerpt.rendered}}></div>
           <Link to={`/book/${id}`}>Read Review</Link>
-          <hr />
         </div>
          );
     }
