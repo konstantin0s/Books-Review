@@ -24,7 +24,7 @@ if (isLoaded) {
   return (
     <div>
       {books.map(book => (
-        <h4>{book.title.rendered}</h4>
+        <h4>{book.title.render}</h4>
       ))}
     </div>
    );

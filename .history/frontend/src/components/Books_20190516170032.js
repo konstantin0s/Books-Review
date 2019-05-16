@@ -22,11 +22,11 @@ const { books,isLoaded} = this.state;
 if (isLoaded) {
 
   return (
-    <div>
+    <di>
       {books.map(book => (
-        <h4>{book.title.rendered}</h4>
+        <h4>{book.title.render}</h4>
       ))}
-    </div>
+    </di>
    );
 }
 
